@@ -1,0 +1,10 @@
+version: "2"
+domain: com
+repo: github.com/blackducksoftware/kb-operator
+resources:
+- group: synopsys
+  version: v1
+  kind: OpsSight
+- group: synopsys
+  version: v1
+  kind: Blackduck
