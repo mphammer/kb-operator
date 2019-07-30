@@ -17,6 +17,7 @@ package controllers
 
 import (
 	"context"
+	"fmt"
 
 	"github.com/go-logr/logr"
 	ctrl "sigs.k8s.io/controller-runtime"
@@ -39,6 +40,7 @@ func (r *BlackduckReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
 	_ = r.Log.WithValues("blackduck", req.NamespacedName)
 
 	// your logic here
+	fmt.Println("Reconcile BlackDuck logic goes here")
 
 	return ctrl.Result{}, nil
 }

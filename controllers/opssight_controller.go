@@ -17,6 +17,7 @@ package controllers
 
 import (
 	"context"
+	"fmt"
 
 	"github.com/go-logr/logr"
 	ctrl "sigs.k8s.io/controller-runtime"
@@ -39,6 +40,7 @@ func (r *OpsSightReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
 	_ = r.Log.WithValues("opssight", req.NamespacedName)
 
 	// your logic here
+	fmt.Println("Reconcile logic for OpsSight goes here")
 
 	return ctrl.Result{}, nil
 }
